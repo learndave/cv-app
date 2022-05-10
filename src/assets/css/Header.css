@@ -1,0 +1,33 @@
+.header-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    justify-content: center;
+}
+
+.main-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.full-name {
+    color: var(--color-main);
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.position {
+    color: var(--color-secondary);
+    font-size: 20px;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+
+    justify-content: left;
+    gap: 30px;
+    color: var(--color-main);
+    font-size: 14px;
+}
