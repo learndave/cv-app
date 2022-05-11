@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { useEffect , useRef, useState } from "react";
 
+import "../assets/css/Editable.css";
+
 class Editable extends Component {
     constructor(props) {
         super(props);
@@ -75,7 +77,7 @@ class Editable extends Component {
                             defaultValue={this.state.hasChangedfromDefault ? this.state.textValue : ""}
                             placeholder={defaultName}
                             style={{width: `${this.state.textWidth + 1}ch`}}
-                            required
+                            
                         />
                         <button 
                             onClick={this.doneEditing}

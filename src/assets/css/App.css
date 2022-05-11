@@ -55,11 +55,11 @@
 }
 
 input,textarea {
+  /* border-radius: 2px; */
+  outline: 1px solid var(--color-secondary);
   border-radius: 2px;
-  border: 1px solid var(--color-secondary);
-  outline: 0;
   padding: 0;
-
+  border: none;
   width: min-width;
   font-size: inherit;
 }

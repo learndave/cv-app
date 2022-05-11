@@ -32,7 +32,7 @@
     justify-content: center;
 
     justify-content: left;
-    gap: 30px;
+    gap: 1.5rem;
     color: var(--color-main);
-    font-size: 1rem;
+    font-size: .9rem;
 }
