@@ -3,7 +3,7 @@
   pointer-events: none;
 }
 
-*:not(input) {
+*:not(input):not(textarea) {
   user-select: none;
   -moz-user-select: none;
   -khtml-user-select: none;
@@ -48,7 +48,7 @@
   background-color: white;
 }
 
-input {
+input,textarea {
   border-radius: 2px;
   border: 1px solid var(--color-secondary);
   outline: 0;
@@ -57,11 +57,20 @@ input {
   width: min-width;
 }
 
-button {
+.editable-done-button {
   position: absolute;
   margin-left: 5px;
+}
+
+button {
   background-color: var(--color-main);
   border: none;
   border-radius: 2px;
   color: white !important;
+}
+
+
+.body-container {
+  padding-top: var(--margin-between);
+  display: flex;
 }

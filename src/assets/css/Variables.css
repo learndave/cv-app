@@ -1,4 +1,7 @@
 :root {
     --color-main: #CB3628;
     --color-secondary: #535353;
+
+    --margin-between: 25px;
+    --gap-between: 15px
 }

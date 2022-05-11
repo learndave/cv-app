@@ -1,15 +1,17 @@
 import React from "react";
 
 import Editable from "../Fields/Editable";
+import EditableTextArea from "../Fields/EditableTextArea";
 
 const Profile = () => {
     return (
-        <div className="profile-container">
-            <div className="profile-title">
+        <div className="profile-container sidebar-group">
+            <div className="profile-title sidebar-title">
                 PROFILE
             </div>
-            <Editable 
-                defaultName="Profile Summary"
+            <EditableTextArea
+                defaultName=
+                    {`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna  aliqua. Massa id neque aliquam vestibulum morbi blandit cursus. Vulputate enim nulla aliquet porttitor lacus luctus accumsan. Proin sagittis nisl rhoncus mattis rhoncus.`}
                 className="profile-summary"
                 type="text"
             />

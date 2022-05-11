@@ -8,17 +8,19 @@ class Skill extends Component {
     }
 
     render() {
-        const { skillName, skillLevel } = this.props;
-
-        return (
-            <div className="skill-item">
+        const { skillID, show } = this.props;
+        
+        if (show) {
+            return (
                 <Editable
-                    defaultName={skillName}
-                    className={skillName}
+                    defaultName="Skill"
+                    className={`skill ${skillID}`}
                     type="text"
                 />
-            </div>
-        );
+            );
+        } else {
+            return (<div></div>);
+        }
     };
 }
 

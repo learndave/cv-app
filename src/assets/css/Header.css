@@ -1,14 +1,19 @@
 .header-container {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: var(--margin-between);
 
     justify-content: center;
+    padding-bottom: var(--margin-between);
+
+    border-bottom: solid 2px var(--color-main);
 }
 
 .main-details {
     display: flex;
     flex-direction: column;
+
+    gap: 5px;
 }
 
 .full-name {

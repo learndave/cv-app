@@ -8,7 +8,9 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Sidebar />
+      <div className="body-container">
+        <Sidebar />
+      </div>
       {/* Side
           Profile Summary
           Skills

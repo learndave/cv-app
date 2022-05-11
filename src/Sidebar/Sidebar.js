@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 import Profile from "./Profile";
 import Skills from "./Skills";
+import "../assets/css/Sidebar.css";
 
 class Sidebar extends Component {
     render() {
