@@ -65,7 +65,7 @@ input,textarea {
 }
 
 .editable-done-button {
-  position: absolute;
+  /* position: absolute; */
   margin-left: 5px;
 }
 
