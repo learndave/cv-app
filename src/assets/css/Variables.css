@@ -1,7 +1,11 @@
 :root {
     --color-main: #CB3628;
+    --color-main-darken: #9c2a20;
     --color-secondary: #535353;
 
     --margin-between: 25px;
-    --gap-between: 15px
+    --gap-between: 15px;
+
+    --page-width: 80vw;
+    --page-height: calc(var(--page-width) * 297/210)
 }

@@ -10,17 +10,13 @@ class Skill extends Component {
     render() {
         const { skillID, show } = this.props;
         
-        if (show) {
-            return (
-                <Editable
-                    defaultName="Skill"
-                    className={`skill ${skillID}`}
-                    type="text"
-                />
-            );
-        } else {
-            return (<div></div>);
-        }
+        return (
+            <Editable
+                defaultName="Skill"
+                className={`skill ${skillID}`}
+                type="text"
+            />
+        );
     };
 }
 

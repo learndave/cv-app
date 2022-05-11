@@ -40,12 +40,18 @@
   }
 }
 
-
 .App {
-  margin: 30px;
+  /* margin: 30px; */
+  width: var(--page-width);
+  height: var(--page-height);
+  margin-top: calc((100vw - var(--page-width))/4);
   padding: 40px;
   box-shadow: 0px 30px 70px rgba(0,0,0,0.4);
   background-color: white;
+}
+
+.hidden {
+  display: none;
 }
 
 input,textarea {
@@ -65,12 +71,16 @@ input,textarea {
 button {
   background-color: var(--color-main);
   border: none;
-  border-radius: 2px;
+  border-radius: 10px;
   color: white !important;
 }
 
+button:hover {
+  background-color: var(--color-main-darken);
+}
 
 .body-container {
   padding-top: var(--margin-between);
-  display: flex;
+  display: grid;
+  grid-template-columns: 3fr 5fr;
 }

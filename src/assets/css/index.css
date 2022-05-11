@@ -15,4 +15,6 @@ code {
 
 body {
   background-color: rgb(253, 246, 235);
+  display: flex;
+  justify-content: center;
 }

@@ -9,7 +9,8 @@
 
 .delete-skill {
     display: none;
-    position: absolute;
+    /* position: absolute;
+    left: 100%; */
 }
 
 .skill-item:hover .delete-skill {
@@ -20,5 +21,30 @@
     display: flex;
     flex-direction: column;
 
+    /* gap: var(--gap-between); */
+    position: relative;
+}
+
+.skill-item {
+    display: flex;
     gap: var(--gap-between);
+
+    padding-top: calc(var(--gap-between) / 2);
+    padding-bottom: calc(var(--gap-between) / 2);
+}
+
+.delete-skill {
+    padding: 3px 10px;
+}
+
+.add-skill-button {
+    padding: 10px 10px;
+    width: fit-content;
+
+    align-self: center;
+}
+
+
+.profile-summary {
+  word-wrap: break-word;
 }

@@ -66,16 +66,18 @@ class Skills extends Component {
                 <div className="skill-list">
                 {this.state.skills.map(skill => {
                     return (
-                        <div className={`skill-item ${skill.id}`}>
-                            <Skill skillID={skill.id} show={skill.show}/>
-                            {this.state.numShownSkills > 1 && skill.show ? 
+                        <div className={`skill-item ${skill.id}`} style={{display: skill.show ? "flex" : "none"}}>
+                            <Skill skillID={skill.id}/>
+                            {this.state.numShownSkills > 1 ? 
                                 <button
                                     // style={{display: this.state.numShownSkills > 1 && skill.show ? "block" : "none"}}
                                     onClick={this.deleteSkill} 
                                     className={`delete-skill ${skill.id}`}>
-                                    X
+                                    Delete
                                 </button> :
-                                ""
+                                <div className="hidden">
+
+                                </div>
                             }
                         </div>
                     )
