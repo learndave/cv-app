@@ -2,7 +2,6 @@ import React from "react";
 
 import "../assets/css/Variables.css";
 import "../assets/css/Header.css";
-
 import Editable from "../Fields/Editable";
 
 const Header = () => {

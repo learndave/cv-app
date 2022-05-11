@@ -42,7 +42,7 @@ class Editable extends Component {
             textValue: newValue,
             inEditMode: false,
             hasChangedfromDefault: this.state.hasChangedfromDefault,
-            textWidth: this.state.textWidth,
+            textWidth: newValue.length,
         });
     }
 
@@ -67,21 +67,23 @@ class Editable extends Component {
                     {this.state.textValue}
                 </div>
                 <div style={{display: this.state.inEditMode ? "block" : "none"}}>
-                    <input
-                        type={type}
-                        className={`${className} editable-input`}
-                        onChange={this.handleInputChange}
-                        defaultValue={this.state.hasChangedfromDefault ? this.state.textValue : ""}
-                        placeholder={defaultName}
-                        style={{width: `${this.state.textWidth + 1}ch`, marginRight: "-1ch"}}
-                        required
-                    />
-                    <button 
-                        onClick={this.doneEditing}
-                        className={`${className} editable-done-button`}
-                        style={{fontSize: "10px"}}>
-                        Done
-                    </button>
+                    <form>
+                        <input
+                            type={type}
+                            className={`${className} editable-input`}
+                            onChange={this.handleInputChange}
+                            defaultValue={this.state.hasChangedfromDefault ? this.state.textValue : ""}
+                            placeholder={defaultName}
+                            style={{width: `${this.state.textWidth + 1}ch`}}
+                            required
+                        />
+                        <button 
+                            onClick={this.doneEditing}
+                            className={`${className} editable-done-button`}
+                            style={{fontSize: "10px"}}>
+                            Done
+                        </button>
+                    </form>
                 </div>
             </div>
         );
