@@ -1,7 +1,7 @@
 :root {
-    --color-main: #CB3628;
-    --color-main-faded: rgba(204, 54, 41, 0.7);
-    --color-main-darken: #9c2a20;
+    --color-main: rgb(99, 90, 185);
+    --color-main-faded: rgba(99, 90, 185, 0.7);
+    --color-main-darken: rgb(25, 17, 93);
     --color-secondary: rgb(123, 123, 123);
     --color-secondary-faded: rgba(123, 123, 123, 0.7);
 

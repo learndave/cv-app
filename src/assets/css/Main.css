@@ -1,6 +1,8 @@
 .main-container {
     display: flex;
     flex-direction: column;
-    gap: calc(var(--margin-between)*2);
+    gap: var(--margin-between);
     margin-left: var(--margin-between);
+    /* height: calc(var(--page-height) * 0.8);
+    overflow-y: hidden; */
 }

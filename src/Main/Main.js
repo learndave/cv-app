@@ -3,6 +3,7 @@ import React from "react";
 import Education from "./Education";
 import Work from "./Work";
 import Award from "./Award";
+import "../assets/css/Variables.css";
 import "../assets/css/Main.css";
 
 
