@@ -1,0 +1,63 @@
+.add-education-button {
+    display: none;
+    /* position: absolute; */
+  }
+
+.education-item:hover {
+    filter: brightness(170%);
+}
+
+.education-container:hover .add-education-button {
+    display: block;
+}
+
+.delete-education {
+    display: none;
+    /* position: absolute;
+    left: 100%; */
+}
+
+.education-item:hover .delete-education {
+    display: block;
+}
+
+.education-item {
+    display: flex;
+    gap: var(--gap-between);
+
+    padding-top: calc(var(--gap-between) / 2);
+    padding-bottom: calc(var(--gap-between) / 2);
+}
+
+.education-item-members {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr 1fr;
+}
+
+.school, .education-year {
+    color: var(--color-main);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.education-year, .education-year:hover {
+    margin-left: .5rem;
+}
+
+.degree {
+    color: var(--color-secondary);
+    font-size: 0.9rem;
+}
+
+.education-item {
+    position: relative;
+}
+
+
+.delete-education {
+    display: none;
+    position: absolute;
+    left: 90%;
+    top: 30%;
+}

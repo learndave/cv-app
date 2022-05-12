@@ -5,8 +5,8 @@ import EditableTextArea from "../Fields/EditableTextArea";
 
 const Profile = () => {
     return (
-        <div className="profile-container sidebar-group">
-            <div className="profile-title sidebar-title">
+        <div className="profile-container body-group">
+            <div className="profile-title group-title">
                 PROFILE
             </div>
             <EditableTextArea

@@ -1,8 +1,10 @@
 import './assets/css/App.css';
+import './assets/css/Body.css';
 import React from 'react';
 
 import Header from './Header/Header';
 import Sidebar from './Sidebar/Sidebar';
+import Main from './Main/Main';
 
 function App() {
   return (
@@ -10,11 +12,8 @@ function App() {
       <Header />
       <div className="body-container">
         <Sidebar />
+        <Main />
       </div>
-      {/* Side
-          Profile Summary
-          Skills
-      */}
       {/* Main
         Education 
         Experience

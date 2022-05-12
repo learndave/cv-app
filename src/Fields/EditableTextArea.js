@@ -79,7 +79,7 @@ class EditableTextArea extends Component {
                         <button 
                             onClick={this.doneEditing}
                             className={`${className} editable-done-button`}
-                            style={{fontSize: "10px"}}>
+                            style={{fontSize: ".8rem", height:"inherit", padding:".1rem .2rem"}}>
                             Done
                         </button>
                     </form>

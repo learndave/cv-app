@@ -36,3 +36,7 @@
     color: var(--color-main);
     font-size: .9rem;
 }
+
+.header-container:hover {
+    filter: brightness(170%);
+}

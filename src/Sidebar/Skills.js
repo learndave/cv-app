@@ -59,8 +59,8 @@ class Skills extends Component {
 
     render() {
         return (
-            <div className="skills-container sidebar-group">
-                <div className="skills-title sidebar-title">
+            <div className="skills-container body-group">
+                <div className="skills-title group-title">
                     SKILLS
                 </div>
                 <div className="skill-list">
@@ -72,7 +72,8 @@ class Skills extends Component {
                                 <button
                                     // style={{display: this.state.numShownSkills > 1 && skill.show ? "block" : "none"}}
                                     onClick={this.deleteSkill} 
-                                    className={`delete-skill ${skill.id}`}>
+                                    className={`delete-skill ${skill.id} delete-button`}
+                                    style={{fontSize: ".8rem", height:"inherit", padding:".1rem .2rem"}}>
                                     Delete
                                 </button> :
                                 <div className="hidden">
@@ -82,7 +83,11 @@ class Skills extends Component {
                         </div>
                     )
                 })}
-                <button onClick={this.addSkill} className="add-skill-button">Add Skill</button>
+                <button 
+                    onClick={this.addSkill}
+                    className="add-skill-button add-button"
+                    style={{fontSize: ".8rem", height:"inherit", padding:".4rem .4rem"}}>
+                    Add Skill</button>
                 </div>
             </div>
         );

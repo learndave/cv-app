@@ -25,6 +25,12 @@
     position: relative;
 }
 
+
+.skill-item:hover {
+    filter: brightness(170%);
+}
+
+
 .skill-item {
     display: flex;
     gap: var(--gap-between);
@@ -37,7 +43,7 @@
     padding: 3px 10px;
 }
 
-.add-skill-button {
+.add-button {
     padding: 10px 10px;
     width: fit-content;
 

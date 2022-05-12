@@ -12,18 +12,6 @@
     flex-direction: column;
 }
 
-.sidebar-title {
-    color: var(--color-main);
-    font-size: 1.2rem;
-    font-weight: 700;
-}
-
-.sidebar-group {
-    display: flex;
-    flex-direction: column;
-    gap: var(--gap-between);
-}
-
 .profile-summary, .skill {
     color: var(--color-secondary);
 }

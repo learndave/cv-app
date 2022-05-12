@@ -85,3 +85,15 @@ button:hover {
   display: grid;
   grid-template-columns: 3fr 5fr;
 }
+
+.delete-button {
+  background-color: var(--color-secondary-faded);
+}
+
+.delete-button:hover {
+  background-color: var(--color-secondary);
+}
+
+button {
+  height: 100%;
+}
