@@ -6,7 +6,7 @@
     justify-content: center;
     padding-bottom: var(--margin-between);
 
-    border-bottom: solid 2px var(--color-main);
+    border-bottom: solid .15rem var(--color-main);
 }
 
 .main-details {
@@ -38,5 +38,5 @@
 }
 
 .header-container:hover {
-    filter: brightness(170%);
+    filter: drop-shadow(0px 0px 20px rgba(204, 54, 41, 0.5));
 }

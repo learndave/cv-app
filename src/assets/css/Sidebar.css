@@ -4,7 +4,7 @@
 
     gap: calc(var(--margin-between)*2);
     padding-right: var(--margin-between);
-    border-right: solid 2px var(--color-main);
+    border-right: solid .15rem var(--color-main);
 }
 
 .profile-container {
@@ -14,4 +14,8 @@
 
 .profile-summary, .skill {
     color: var(--color-secondary);
+}
+
+.profile-summary:hover {
+    filter: drop-shadow(0px 0px 20px rgba(204, 54, 41, 0.5));
 }

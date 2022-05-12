@@ -44,7 +44,7 @@
   /* margin: 30px; */
   width: var(--page-width);
   height: var(--page-height);
-  margin-top: calc((100vw - var(--page-width))/4);
+  margin-top: min(calc((100vw - var(--page-width))/4),50px);
   padding: var(--main-padding);
   box-shadow: 0px 30px 70px rgba(0,0,0,0.4);
   background-color: white;
@@ -62,6 +62,7 @@ input,textarea {
   border: none;
   width: min-width;
   font-size: inherit;
+  color: black !important;
 }
 
 .editable-done-button {

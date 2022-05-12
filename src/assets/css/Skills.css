@@ -27,7 +27,7 @@
 
 
 .skill-item:hover {
-    filter: brightness(170%);
+    filter: drop-shadow(0px 0px 20px rgba(204, 54, 41, 0.5));
 }
 
 
