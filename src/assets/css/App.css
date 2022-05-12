@@ -42,6 +42,8 @@
 
 .App {
   /* margin: 30px; */
+  display: flex;
+  flex-direction: column;
   width: var(--page-width);
   height: var(--page-height);
   margin-top: min(calc((100vw - var(--page-width))/4),50px);

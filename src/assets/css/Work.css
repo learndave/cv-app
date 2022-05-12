@@ -1,27 +1,25 @@
-.education-container {
+.work-container {
     position: relative;
 }
 
-.add-education-button {
+.add-work-button {
     position: absolute;
     top: 100%;
     opacity: 0;
-    /* overflow: hidden; */
 
     transition: all .7s ease;
-    /* position: absolute; */
 }
 
-.education-item:hover {
+.work-item:hover {
     filter: drop-shadow(0px 0px 20px rgba(204, 54, 41, 0.5));
 }
 
-.education-container:hover .add-education-button {
+.work-container:hover .add-work-button {
     opacity: 100%;
     /* height: auto; */
 }
 
-.education-item {
+.work-item {
     display: flex;
     gap: var(--gap-between);
 
@@ -29,46 +27,54 @@
     padding-bottom: calc(var(--gap-between) / 2);
 }
 
-.education-item-members {
+.work-item-members {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr 1fr 1fr;
 }
-
-.school, .education-year {
-    color: var(--color-main);
+.company, .work-year {
+    color: var(--color-secondary);
     font-weight: 900;
     font-size: 0.9rem;
 }
 
-.education-year, .education-year:hover {
+.job-title {
+    color: var(--color-main);
+    font-weight: 900;
+    font-size: 1rem;
+
+    grid-row: 1;
+    grid-column: 1 / span 2;
+}
+
+.work-year, .work-year:hover {
     margin-left: .5rem;
 }
 
-.degree {
+.job-description {
     color: var(--color-secondary);
     font-size: 0.9rem;
 
     grid-column: 1 / span 2;
 }
 
-.education-item {
+.work-item {
     position: relative;
 }
 
 
-.delete-education {
-    /* display: none; */
+.delete-work {
     position: absolute;
     left: 90%;
     top: 30%;
 }
 
-.delete-education {
+
+.delete-work {
     opacity: 0;
     transition: all 0.7s ease;
 }
 
-.education-item:hover .delete-education {
+.work-item:hover .delete-work {
     opacity: 100%;
 }

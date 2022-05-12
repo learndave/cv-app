@@ -5,6 +5,7 @@
     gap: calc(var(--margin-between)*2);
     padding-right: var(--margin-between);
     border-right: solid .15rem var(--color-main);
+    height: 100%;
 }
 
 .profile-container {

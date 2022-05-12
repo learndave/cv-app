@@ -62,10 +62,12 @@ class EditableTextArea extends Component {
                 <div
                     onClick={this.startEditing}
                     className={`${className} editable-text`}
-                    style={{display: this.state.inEditMode ? "none" : "block"}}>
+                    style={{opacity: this.state.inEditMode ? "0" : "1", 
+                            position: this.state.inEditMode ? "absolute" : "relative"}}>
                     {this.state.textValue}
                 </div>
-                <div style={{display: this.state.inEditMode ? "block" : "none"}}>
+                <div style={{opacity: this.state.inEditMode ? "1" : "0",
+                            position: this.state.inEditMode ? "relative" : "absolute"}}>
                     <form>
                         <textarea
                             type={type}
