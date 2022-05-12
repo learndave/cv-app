@@ -1,6 +1,0 @@
-.main-container {
-    display: flex;
-    flex-direction: column;
-    gap: calc(var(--margin-between)*2);
-    margin-left: var(--margin-between);
-}
